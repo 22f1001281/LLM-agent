@@ -1,8 +1,3 @@
-/**
- * GyaanSetu - Advanced AI Assistant
- * v2.8.0 (Updated: AI Pipe integration + bug fixes)
- * Author: Gaurav Tomar (Original) & Assistant (fixes)
- */
 class GyaanSetu {
     constructor() {
         this.version = '2.8.0';
@@ -64,7 +59,7 @@ class GyaanSetu {
             this.showWelcomeMessage();
             console.log(`GyaanSetu v${this.version} initialized successfully`);
         } catch (error) {
-            console.error('Failed to initialize GyaanSetu:', error);
+            console.error('Failed to initialize LLMGURU:', error);
             this.showToast('error', 'Initialization Error', `Failed to start the application: ${error.message || error}`);
             try { this.hideLoadingScreen(); } catch(_) {}
         }
